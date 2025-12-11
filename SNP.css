@@ -1,0 +1,958 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: black;
+  background:rgba(249, 247, 244, 1);
+}
+
+.contener{
+  width: 1250px;
+  margin: auto;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+}
+
+.sdwig{
+  margin-left: 10px;
+}
+/*Секция шапка*/
+main{
+  color: white
+}
+header{
+ padding-top: 50px;
+  width: 1168px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+  .img-b{
+  background: url(/img/header-img.png) no-repeat center center;
+  background-size: cover;
+  max-width:1920px;
+  width: 100%;
+  height: 830px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 468px;
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: -30px;
+}
+
+header label{
+font-size: 20px;
+font-weight: 400;
+position: relative;
+left: 1000px;
+top: -50px;
+}
+
+header nav ul li a{
+  color: white;
+}
+
+header nav ul li a:hover{
+ border-bottom: 1px solid white;
+}
+
+/*Секция с главной картинкой*/
+
+main h1{
+  font-weight: 700;
+  font-size: 96px;
+  width: 770px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 105px;
+}
+
+main p{
+  width: 562px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 142%;
+  position: relative;
+  top: 150px;
+}
+
+.img-b button{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 190px;
+  width: 120px;  
+  height: 35px;
+  font-size: 17px;
+  border: none;
+  border-radius: 10px;
+  line-height: 24px;
+  transition: all 300ms ease;
+}
+.img-b button:hover{
+  background: rgba(239, 165, 1, 1);
+}
+.img-b button:active{
+  background: rgba(248, 230, 190, 1);
+}
+
+/*Секция с картинками*/
+.pictr{
+  color: black;
+  width: 1170px;
+  height: 1334px;
+  margin: auto auto;
+  margin-top: 140px;
+}
+
+.pictr .menu h2{
+  font-weight: 700;
+  font-size: 59px;
+  text-align: center;
+  padding-bottom: 35px;
+}
+
+.pictr .menu nav ul {
+list-style: none;
+display: flex;
+justify-content: space-between;
+width: 700px;
+height: 34px;
+margin: auto auto;
+padding-bottom:50px;
+}
+
+.pictr .menu nav ul li a {
+  color: black;
+  font-weight: 700;
+  font-size: 23px;
+}
+
+.pictr .menu ul li a:hover{
+  border-bottom: 2px solid black;
+}
+
+.pictr .menu ul li a:active{
+  color: rgba(239, 165, 1, 1);
+}
+.pictr .menu ul li a:active{
+ color: rgba(239, 165, 1, 1);
+ border-bottom: 2px solid rgba(239, 165, 1, 1);
+}
+
+/*часть с картинками*/
+.line1, .line2{
+    display: flex;
+    justify-content: space-between;
+}
+.line1{
+    margin-bottom: 30px;
+}
+/* карточки */
+.tours-1, .tours-2, .tours-3, .tours-4, .tours-5, .tours-6 {
+    width: 400px;
+    height: 531px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.tours-1, .tours-2, .tours-4, .tours-5{
+  margin-right: 30px;
+}
+.tours-1 img, .tours-2 img, .tours-3 img, .tours-4 img, .tours-5 img, .tours-6 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+    display: block;
+    transition: transform 300ms ease;
+}
+/* темный градиент на картинках */
+.tours-1::after, .tours-2::after, .tours-3::after,.tours-4::after, .tours-5::after, .tours-6::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(360deg, 
+  rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+/* анимация*/
+.tours-1:hover img, .tours-2:hover img, .tours-3:hover img, .tours-4:hover img, .tours-5:hover img, .tours-6:hover img {
+    transform: scale(1.2);
+}
+/* надписи */
+.tours-1 .text, .tours-2 .text, .tours-3 .text, .tours-4 .text, .tours-5 .text, .tours-6 .text {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 230px;
+    color: white;
+    z-index: 2;
+}
+.tours-1 .text h3, .tours-2 .text h3, .tours-3 .text h3, .tours-4 .text h3, .tours-5 .text h3, .tours-6 .text h3 {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 122%;
+    margin: 0;
+}
+.tours-1 .text p, .tours-2 .text p, .tours-3 .text p, .tours-4 .text p, .tours-5 .text p, .tours-6 .text p {
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 16px;
+    line-height: 142%;
+}
+/* кнопка*/
+.tours-1 button, .tours-2 button, .tours-3 button, .tours-4 button, .tours-5 button, .tours-6 button {
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 199px;
+    height: 42px;
+    color: white;
+    padding: 25px 20px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+.tours-1 button img, .tours-2 button img, .tours-3 button img, .tours-4 button img, .tours-5 button img, .tours-6 button img {
+    width: 22px;
+    height: 15px;
+    margin-left: 15px;
+}
+.tours-1:hover button, .tours-2:hover button, .tours-3:hover button, .tours-4:hover button, .tours-5:hover button, .tours-6:hover button {
+    background: #286562;
+}
+.tours-1 button:active, .tours-2 button:active, .tours-3 button:active, .tours-4 button:active, .tours-5 button:active, .tours-6 button:active {
+    background: #EFA501;
+}
+
+/*Секция собери свой тур*/
+form{
+  width: 1170px;
+  height: 986px;
+  margin: auto auto;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50px;
+}
+.form .zagolovok{
+  width: 458px;
+  height: 159px;
+  text-align: center;
+  margin: auto auto;
+  padding-top: 140px;
+  padding-bottom: 100px;
+}
+.form h2{
+  font-size: 59px;
+  font-weight: 700;
+}
+.form p{
+color: rgba(166, 166, 166, 1);
+font-size: 20px;
+font-weight: 400;
+padding-top: 35px;
+}
+
+/*Подразделение на первый див: Имя и Направление*/
+.flex .string-1{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 1030px;
+  height: 104px;
+  gap: 30px;
+  padding-left: 70px;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+.flex .string-1 div input{
+  width: 480px;
+  height: 68px;
+  background: rgba(249, 247, 244, 1);
+  border-radius: 10px;
+  border: 1px solid rgba(244, 240, 233, 1);
+  outline: none;
+  font-size: 20px;
+  color: black;
+  padding-left: 20px;
+}
+.flex .string-1 input:hover{
+  background: rgba(244, 240, 233, 1);
+}
+.flex .string-1 input:focus{
+  border: 1px solid rgba(166, 166, 166, 1);
+}
+.flex .string-1 input::placeholder{
+  font-size: 18px;
+  color: rgba(166, 166, 166, 1);
+  font-weight: 400;
+}
+
+.flex .string-1 .spisok{
+  width: 500px;
+  height: 68px;
+  background: rgba(249, 247, 244, 1);
+  border-radius: 10px;
+  border: 1px solid rgba(244, 240, 233, 1);
+  outline: none;
+  font-size: 20px;
+  color: rgba(166, 166, 166, 1);
+  padding-left: 20px;
+  /*для стрелочки*/
+  appearance: none;
+  -webkit-appearance:none;
+  -moz-appearance: none;
+  background-image: url(/img/ic-dropdown.svg) ;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 20px;
+ 
+}
+.flex .string-1 select:hover{
+  background: rgba(244, 240, 233, 1);
+  background-image: url(/img/ic-dropdown.svg) ;
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 20px;
+}
+.flex .string-1 select:focus{
+  border: 1px solid rgba(166, 166, 166, 1);
+}
+.flex .string-1 select::placeholder{
+  font-size: 18px;
+  color: rgba(166, 166, 166, 1);
+  font-weight: 400;
+}
+.flex .string-1 select option{
+  color: black;
+}
+.flex .string-1 label{
+  position: relative;
+  top: -12px;
+  left: 7px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*Подразделение на второй див: email и номер телефона*/
+.flex .string-2{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 1030px;
+  height: 104px;
+  gap: 30px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+}
+.flex .string-2 div input{
+  width: 480px;
+  height: 68px;
+  background: rgba(249, 247, 244, 1);
+  border-radius: 10px;
+  border: 1px solid rgba(244, 240, 233, 1);
+  outline: none;
+  font-size: 20px;
+  color: black;
+  padding-left: 20px;
+}
+.flex .string-2 input:hover{
+  background: rgba(244, 240, 233, 1);
+}
+.flex .string-2 input:focus{
+  border: 1px solid rgba(166, 166, 166, 1);
+}
+.flex .string-2 input::placeholder{
+  font-size: 18px;
+  color: rgba(166, 166, 166, 1);
+  font-weight: 400;
+}
+.flex .string-2 label{
+  position: relative;
+  top: -12px;
+  left: 7px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*Подразделение на третий див: дата от и до*/
+.flex .string-3{
+  display: inline-flex;
+  justify-content: space-between;
+  width: 1030px;
+  height: 104px;
+  gap: 30px;
+  padding-left: 70px;
+  padding-bottom: 30px;
+}
+.flex .string-3 div input{
+  width: 480px;
+  height: 68px;
+  background: rgba(249, 247, 244, 1);
+  border-radius: 10px;
+  border: 1px solid rgba(244, 240, 233, 1);
+  outline: none;
+  font-size: 20px;
+  color: black;
+  padding-left: 20px;
+}
+.flex .string-3 input:hover{
+  background: rgba(244, 240, 233, 1);
+}
+.flex .string-3 input:focus{
+  border: 1px solid rgba(166, 166, 166, 1);
+}
+.flex .string-3 input::placeholder{
+  font-size: 18px;
+  color: rgba(166, 166, 166, 1);
+  font-weight: 400;
+}
+.flex .string-3 label{
+  position: relative;
+  top: -12px;
+  left: 7px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*Ввод данных: Комментарий*/
+.comment{
+  width: 1030px;
+  height: 188px;
+  margin: auto auto;
+}
+.comment #com{
+  width: 1030px;
+  height: 152px;
+  background: rgba(249, 247, 244, 1);
+  border-radius: 10px;
+  border: 1px solid rgba(244, 240, 233, 1);
+  outline: none;
+  font-size: 20px;
+  color: black;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.comment #com:hover{
+  background: rgba(244, 240, 233, 1);
+}
+.comment #com:focus{
+  border: 1px solid rgba(166, 166, 166, 1);
+}
+.comment label{
+  position: relative;
+  top: -12px;
+  left: 7px;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/*Вам есть 18?*/
+.age{
+  padding: 30px 0;
+  margin-left: 70px;
+  margin-bottom: 10px;
+}
+
+.age input label{
+  position: relative;
+  top: -30px;
+}
+.age .eighteen{
+  position: relative;
+  top: 10px;
+}
+input[type='radio'] {
+  transform: scale(2.4);
+   vertical-align: middle;
+  margin: 10px;
+  accent-color: black;
+}
+.age label{
+  font-size: 20px;
+  font-weight: 400; 
+}
+.age .yes{
+  margin-right: 25px;
+}
+
+/*Кнопка лецензионного соглашения*/
+input[type='checkbox'] {
+    transform: scale(2);
+    accent-color: white;
+    background: transparent;
+    margin: 20px;
+    margin-left: 45px;
+}
+.sogl{
+  position: relative;
+  top: -25px;
+  margin-left: 30px;
+}
+.sogl label{
+  font-size: 17px;
+  font-weight: 400;
+  color: rgba(166, 166, 166, 1);
+}
+.sogl label a{
+  color: black;
+}
+.sogl label a:hover{
+  text-decoration: underline;
+}
+.sogl label a:active{
+  color: rgba(40, 101, 98, 1);
+}
+
+/*Кнопка найти тур*/
+.btn button{
+  width: 235px;
+  height: 60px;
+  display: inline-flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  margin-left: 70px;
+  gap: 30px;
+  
+}
+
+.btn .onebt{
+  background: rgba(40, 101, 98, 1);
+  border: none;
+  transition: all 300ms ease;
+}
+
+.btn .onebt:hover{
+transform: scale(1.1);
+background: rgba(59, 126, 123, 1);
+}
+.btn .onebt:active{
+  background: rgba(98, 127, 126, 1);
+}
+
+
+.btn a{
+  color:white ;
+  font-size: 20px;
+  font-weight: 400;
+  position: relative;
+  top: 18px;
+  left: 68px;
+}
+
+
+/*Кнопка сбросить*/
+.btn .twobt{
+  background: rgba(224, 240, 229, 1);
+  border: none;
+  transition: all 300ms ease;
+  position: relative;
+  left: -40px;
+}
+.btn .twobt:hover{
+transform: scale(1.1);
+background: rgba(241, 243, 242, 1);
+}
+.btn .twobt:active{
+background: rgba(217, 223, 219, 1);
+}
+.btn .twobt a{
+color: rgba(40, 101, 98, 1);
+}
+
+/*!Секция Отзывы наших путешественников*/
+.otzav{
+  width: 1170px;
+  height: 1005px;
+  margin: auto auto;
+}
+.otzav .zagolovok{
+  width: 529px;
+  height: 232px;
+  margin: auto auto;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+.otzav .zagolovok h2{
+  font-size: 59px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px
+}
+.otzav .zagolovok p{
+  width: 409px;
+  height: 56px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(166, 166, 166, 1);
+  text-align: center;
+  margin:auto auto;
+}
+.otzav .flex{
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.otzav .flex .maria-pavel{
+  width: 570px;
+  height: 670px;
+  background: rgba(244, 240, 233, 1);
+  border-radius: 50px;
+  margin: auto auto;
+}
+.otzav .flex .maria-pavel .abzac{
+  width: 490px;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 122%;
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+/*Табличка марии*/
+.otzav .flex .maria-pavel .puteshestvennik-1{
+  width: 490px;
+  margin-top: 270px;
+  margin-left: 40px;
+}
+.otzav .flex .maria-pavel .puteshestvennik-1 .mar{
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.otzav .flex .maria-pavel .puteshestvennik-1 .mari{
+  color: rgba(166, 166, 166, 1);
+  font-size: 17px;
+  font-weight: 400;
+}
+.otzav .flex .maria-pavel .puteshestvennik-1 .girl-pictr{
+  margin-left: 420px;
+  position: relative;
+  top: -70px;
+}
+
+/*Табличка павла*/
+.otzav .flex .maria-pavel .puteshestvennik-2{
+  width: 490px;
+  margin-left: 40px;
+}
+.otzav .flex .maria-pavel .puteshestvennik-2 .pavlic{
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 8px;
+  margin-top: 70px;
+}
+.otzav .flex .maria-pavel .puteshestvennik-2 p{
+  color: rgba(166, 166, 166, 1);
+  font-size: 17px;
+  font-weight: 400;
+}
+.otzav .flex .maria-pavel .puteshestvennik-2 img{
+  margin-left: 420px;
+  position: relative;
+  top: -65px;
+}
+
+/*Секция с картинками без контейнера*/
+.imges{
+  width: 1920px;
+  height: 1222px;
+  margin: auto auto;
+}
+.imges .zagolovok{
+  width: 723px;
+  height: 159px;
+  margin: auto auto;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 100px;
+}
+.imges .zagolovok h2{
+  font-size: 59px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px
+}
+.imges .zagolovok p{
+  width: 409px;
+  height: 56px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(166, 166, 166, 1);
+  text-align: center;
+  margin:auto auto;
+}
+.imges .section{
+  width: 1920px;
+  height: 963px;
+  margin: auto auto;
+}
+.imges .section .picture img{
+  margin-right: 30px;
+}
+
+/*Секция сo Стамбулом*/
+.stambul{
+  width: 1170px;
+  height: 2060px;
+  margin: auto auto;
+}
+.stambul .zagolovok{
+  width: 615px;
+  height: 159px;
+  margin: auto auto;
+  text-align: center;
+  margin-top: 140px;
+  margin-bottom: 100px;
+  position: relative;
+  left: 15px;
+}
+.stambul .zagolovok h2{
+  font-size: 59px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 30px
+}
+.stambul .zagolovok p{
+  width: 409px;
+  height: 56px;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(166, 166, 166, 1);
+  text-align: center;
+  margin:auto auto;
+}
+.stambul .cards_stambul{
+  width: 1170px;
+  height: 1801px;
+  margin: auto auto;
+}
+/* Картинки */
+.cards_1, .cards_2{
+  margin-bottom: 50px;
+}
+.cards_1, .cards_2, .cards_3{
+    width: 1170px;
+    height: 567px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.cards_1 img, .cards_2 img, .cards_3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+    display: block;
+    transition: transform 300ms ease;
+}
+/* темный градиент на картинках */
+.cards_1::after, .cards_2::after, .cards_3::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+    z-index: 1;
+    pointer-events: none;
+}
+/* анимация*/
+.cards_1:hover img, .cards_2:hover img, .cards_3:hover img {
+    transform: scale(1.2);
+}
+
+/* надписи */
+.cards_1 .texts, .cards_2 .texts, .cards_3 .texts{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    width: 554px;
+    color: white;
+    z-index: 2;
+}
+.cards_1 .texts h3, .cards_2 .texts h3, .cards_3 .texts h3{
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 122%;
+    margin: 0;
+}
+.cards_1 .texts p, .cards_2 .texts p, .cards_3 .texts p{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 37px;
+    line-height: 142%;
+}
+.cards_1 .texts p{
+  margin-bottom: 37px;
+}
+.cards_1 .texts nav{
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 142%;
+  margin-left: 40px;
+}
+
+/* кнопка*/
+.cards_1 button, .cards_2 button, .cards_3 button{
+    position: absolute;
+    bottom: 45px;
+    left: 45px;
+    background: none;
+    border: none;
+    border-radius: 50px;
+    font-size: 23px;
+    font-weight: 700;
+    width: 199px;
+    height: 12px;
+    color: white;
+    padding: 25px 10px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 300ms ease;
+}
+
+.cards_1 button img, .cards_2 button img, .cards_3 button img{
+    width: 22px;
+    height: 15px;
+    margin-left: 15px;
+}
+.cards_1:hover button , .cards_2:hover button, .cards_3:hover button{
+    background: #286562;
+}
+.cards_1:active  button, .cards_2:active button, .cards_3:active button{
+    background: #EFA501;
+}
+/*мессенджеры*/
+.cards_1 .button, .cards_2 .button, .cards_3 .button{
+  position: absolute;
+  left: 800px;
+  top: 485px;
+  display: flex;
+  justify-content: space-between;
+  width: 292px;
+}
+.cards_1 a, .cards_2 a, .cards_3 a{
+  color: white;
+}
+.cards_1 a:hover, .cards_2 a:hover, .cards_3 a:hover{
+  text-decoration: underline;
+}
+.cards_1 a:active, .cards_2 a:active, .cards_3 a:active{
+  color: rgba(239, 165, 1, 1);
+}
+
+/*Последняя секция перед футером*/
+.mini{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+.mini img{
+padding-top: 150px;
+margin-left: 220px;
+}
+.mini .nadpisi{
+padding-top: 240px;
+padding-right: 250px;
+}
+.mini .nadpisi h3{
+  font-size: 35px;
+  font-weight: 500;
+  width: 370px;
+  padding-bottom: 25px;
+}
+.mini .nadpisi p{
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(166, 166, 166, 1);
+  width: 364px;
+}
+.mini .nadpisi p a{
+  color: black;
+}
+.mini .nadpisi p a:hover{
+  text-decoration: underline;
+}
+.mini .nadpisi p a:active{
+  color: rgba(40, 101, 98, 1);
+}
+/*футер*/
+.footer{
+  width: 1920px;
+  height: 88px;
+  background: rgba(244, 240, 233, 1);
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer p{
+  color: rgba(166, 166, 166, 1);
+  font-size: 20px;
+  font-weight: 400;
+  padding-top:35px ;
+  padding-left: 370px;
+}
+.footer .mesndg {
+  padding-left: 1135px;
+  position: relative;
+  top: -30px;
+}
+.footer .mesndg a{
+  color: black;
+  position: relative;
+  top: -5px;
+  padding-right: 20px;
+}
+.footer .mesndg a:hover{
+  text-decoration: underline;
+}
+.footer .mesndg a:active{
+  color: rgba(239, 165, 1, 1);
+}
